@@ -31,7 +31,7 @@
     NSLog(@"WeatherUnderground request: %@", requestURL);
     NSURL *url = [NSURL URLWithString:requestURL];
     
-    NSURLRequest *request = [NSURLRequest requestWithURL:url cachePolicy:NSURLCacheStorageAllowed timeoutInterval:15];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:15];
     return request;
 }
 
@@ -88,7 +88,7 @@
     NSLog(@"WorldWeatherOnline request: %@", requestURL);
     NSURL *url = [NSURL URLWithString:requestURL];
     
-    NSURLRequest *request = [NSURLRequest requestWithURL:url cachePolicy:NSURLCacheStorageAllowed timeoutInterval:15];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:15];
     return request;
 }
 
@@ -147,7 +147,7 @@
     NSLog(@"OpenWeatherMap request: %@", requestURL);
     NSURL *url = [NSURL URLWithString:requestURL];
     
-    NSURLRequest *request = [NSURLRequest requestWithURL:url cachePolicy:NSURLCacheStorageAllowed timeoutInterval:15];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:15];
     return request;
 }
 
@@ -196,7 +196,7 @@
     NSLog(@"ForecastIO request: %@", requestURL);
     NSURL *url = [NSURL URLWithString:requestURL];
     
-    NSURLRequest *request = [NSURLRequest requestWithURL:url cachePolicy:NSURLCacheStorageAllowed timeoutInterval:15];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:15];
     return request;
 }
 
@@ -243,7 +243,7 @@
     
     NSLog(@"Yahoo request: %@", requestURL);
     NSURL *url = [NSURL URLWithString:[requestURL stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
-    NSURLRequest *request = [NSURLRequest requestWithURL:url cachePolicy:NSURLCacheStorageAllowed timeoutInterval:15];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:15];
     return request;
 }
 
