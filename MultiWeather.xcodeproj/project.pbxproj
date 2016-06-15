@@ -11,6 +11,7 @@
 		C919C45E1954DF10001F306B /* MWWeatherAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = C919C45D1954DF10001F306B /* MWWeatherAPIClient.m */; };
 		C919C461195633C1001F306B /* MWWeatherUndergroundWeather.m in Sources */ = {isa = PBXBuildFile; fileRef = C919C460195633C0001F306B /* MWWeatherUndergroundWeather.m */; };
 		C919C46419572810001F306B /* NSString+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = C919C46319572810001F306B /* NSString+Helper.m */; };
+		C91A91F61D1128170054F32D /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C91A91F41D1128170054F32D /* Launch Screen.storyboard */; };
 		C925E1D01950213B0037F125 /* UIColor+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = C925E1CF1950213B0037F125 /* UIColor+Helper.m */; };
 		C925E1D4195029050037F125 /* MWSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C925E1D3195029050037F125 /* MWSettingsViewController.m */; };
 		C931C18F1968314E003B66D2 /* MWForecastIOWeather.m in Sources */ = {isa = PBXBuildFile; fileRef = C931C18E1968314E003B66D2 /* MWForecastIOWeather.m */; };
@@ -76,6 +77,7 @@
 		C919C460195633C0001F306B /* MWWeatherUndergroundWeather.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWWeatherUndergroundWeather.m; sourceTree = "<group>"; };
 		C919C46219572810001F306B /* NSString+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Helper.h"; sourceTree = "<group>"; };
 		C919C46319572810001F306B /* NSString+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Helper.m"; sourceTree = "<group>"; };
+		C91A91F51D1128170054F32D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Launch Screen.storyboard"; sourceTree = "<group>"; };
 		C925E1CE1950213B0037F125 /* UIColor+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Helper.h"; sourceTree = "<group>"; };
 		C925E1CF1950213B0037F125 /* UIColor+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Helper.m"; sourceTree = "<group>"; };
 		C925E1D2195029050037F125 /* MWSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWSettingsViewController.h; sourceTree = "<group>"; };
@@ -191,6 +193,15 @@
 				C95BB9A61968A0DD0083E709 /* MWYahooWeather.m */,
 			);
 			name = "Weather Services";
+			sourceTree = "<group>";
+		};
+		C91A91F31D1127C70054F32D /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				C9FFC504193FCADC004D16E8 /* Main.storyboard */,
+				C91A91F41D1128170054F32D /* Launch Screen.storyboard */,
+			);
+			name = Storyboards;
 			sourceTree = "<group>";
 		};
 		C925E1CD1950211C0037F125 /* Categories */ = {
@@ -317,7 +328,7 @@
 		C9FFC4F8193FCADC004D16E8 /* MultiWeather */ = {
 			isa = PBXGroup;
 			children = (
-				C9FFC504193FCADC004D16E8 /* Main.storyboard */,
+				C91A91F31D1127C70054F32D /* Storyboards */,
 				C9FFC501193FCADC004D16E8 /* MWAppDelegate.h */,
 				C9FFC502193FCADC004D16E8 /* MWAppDelegate.m */,
 				C90E9B1C195772710016135A /* MWConstants.h */,
@@ -489,6 +500,7 @@
 				C9807C5A1954D6AA00D8A439 /* Images.xcassets in Resources */,
 				C9384CA91954570A00D4EE7D /* MWWeatherServiceCell.xib in Resources */,
 				C9FFC506193FCADC004D16E8 /* Main.storyboard in Resources */,
+				C91A91F61D1128170054F32D /* Launch Screen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -561,6 +573,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		C91A91F41D1128170054F32D /* Launch Screen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C91A91F51D1128170054F32D /* Base */,
+			);
+			name = "Launch Screen.storyboard";
+			sourceTree = "<group>";
+		};
 		C9FFC4FB193FCADC004D16E8 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -671,6 +691,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.AIrza.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -687,6 +708,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.AIrza.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

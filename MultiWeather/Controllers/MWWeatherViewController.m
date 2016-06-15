@@ -251,7 +251,8 @@
 
 -(CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    return CGSizeMake(64.0f, self.dailyForecastCollectionView.bounds.size.height);
+    float width = MIN(self.view.bounds.size.width / self.weather.dailyForecast.count, 108.0f);
+    return CGSizeMake(width, self.dailyForecastCollectionView.bounds.size.height);
 }
 
 -(CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section
@@ -286,6 +287,5 @@
     
     return cell;
 }
-
 
 @end
